@@ -3,6 +3,7 @@
 [![Docker Image Size](https://img.shields.io/docker/image-size/abguven/pandas-openpyxl/latest)](https://hub.docker.com/r/abguven/pandas-openpyxl)
 [![Python Version](https://img.shields.io/badge/python-3.11--slim-blue)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Security: Non-Root](https://img.shields.io/badge/Security-Non--Root-green)](https://hub.docker.com/r/abguven/pandas-openpyxl)
 
 ## Overview
 
@@ -16,6 +17,11 @@ Most data science images are bloated (1GB+). This image is built on **Python 3.1
 * **Fast Deployment:** Smaller size means faster "pulls" in your CI/CD or Orchestrator.
 * **Security:** Built on stable Debian-slim to minimize the attack surface.
 * **Transparent:** Full Dockerfile available on GitHub.
+
+## Security Features (v1.1+)
+
+* **Non-Root User:** Runs as `appuser` (UID 1000) by default to follow the Least Privilege Principle.
+* **Minimal Base:** Built on Debian-slim to minimize the attack surface.
 
 ## Tech Stack
 
